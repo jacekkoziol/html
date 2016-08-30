@@ -1,0 +1,143 @@
+
+  <form action="?" class="form form--with-spacings" data-form-validate="">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="heading heading--xs u-spacing--bottom-2 u-spacing--bottom-3-min-md">Your Details</h3>
+        </div>
+        <div class="col-xs-12 col-md-5">
+
+          <div class="form__group">
+            <label for="first-name" class="form__label">First name</label>
+            <div class="form__field">
+              <input type="text" class="form__control" name="first-mname" id="first-name" placeholder="Please enter" required>
+              <i class="form__icon"></i>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xs-12 col-md-5 col-md-push-1">
+
+          <div class="form__group">
+            <label for="last-name" class="form__label">Last name</label>
+            <div class="form__field">
+              <input type="text" class="form__control" name="last-mname" id="last-name" placeholder="Please enter" required>
+              <i class="form__icon"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- / .row -->
+
+      <div class="row">
+        <div class="col-xs-12 col-md-5">
+          <h3 class="heading heading--xs u-spacing--bottom-2 u-spacing--bottom-3-min-md">Test Drive Details</h3>
+
+          <div class="form__group-wrapper">
+            <div class="form__group">
+              <label for="vehicle" class="form__label">Vehicle</label>
+              <div class="form__field">
+                <select name="vehicle" id="vehicle" class="form__select" required>
+                  <option value="" selected data-select-default-option>Please select</option>
+                  <option value="#">Golf</option>
+                  <option value="#">Passat</option>
+                  <option value="#">Jetta</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="date" class="form__label">Preferred date</label>
+              <div class="form__field">
+                <input type="text" class="form__control" name="date" id="date" 
+                  placeholder="Please enter"
+                  data-parsley-trigger="pickadateUpdate change"
+                  data-datapicker 
+                  required>
+                <i class="form__icon"></i>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="time" class="form__label">Preferred time</label>
+              <div class="form__field">
+                <input type="text" class="form__control" name="time" id="time" 
+                  placeholder="Please enter"
+                  data-parsley-trigger="pickadateUpdate change"
+                  data-timepicker 
+                  required>
+                <i class="form__icon"></i>
+              </div>
+            </div>
+          </div>
+          <!-- / .form__group-wrapper -->
+        </div>
+
+        <div class="col-xs-12 col-md-5 col-md-push-1">
+          <h3 class="heading heading--xs u-spacing--bottom-2 u-spacing--bottom-3-min-md">Contact Details</h3>
+
+          <div class="form__group-wrapper">
+
+            <div class="form__group">
+              <label for="address" class="form__label">Email address</label>
+              <div class="form__field">
+                <input type="email" class="form__control" name="address" id="address" 
+                  placeholder="Please enter" 
+                  required 
+                  data-parsley-type="email">
+                <i class="form__icon"></i>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="phone" class="form__label">Phone number</label>
+              <div class="form__field">
+                <input type="text" class="form__control" name="phone" id="phone" placeholder="Please enter"	data-parsley-type="number">
+                <i class="form__icon"></i>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="mobile" class="form__label">Mobile number</label>
+              <div class="form__field">
+                <input type="text" class="form__control" name="mobile" id="mobile" placeholder="Please enter" data-parsley-type="digits">
+                <i class="form__icon"></i>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label for="contact-method" class="form__label">Preferred contact method</label>
+              <div class="form__field">
+                <select name="contact-method" id="contact-method" class="form__select" required>
+                  <option value="" selected data-select-default-option>Please select</option>
+                  <option value="#">Email</option>
+                  <option value="#">Phone</option>
+                  <option value="#">Mobile</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- / .form__group-wrapper -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-9">
+          <div class="form__group">
+            <label class="form__checkbox-label" for="checkbox">
+              <input type="checkbox" name="checkbox" id="checkbox" class="" required>
+              <span class="form__custom-checkbox"></span>
+              Please enter your details, select the vehicle you would
+              like to test drive and when you would like to test drive below.
+            </label>
+          </div>
+        </div>
+
+        <div class="col-xs-12 u-spacing-4 u-spacing--2-min-md">
+          <button class="btn btn--sm btn--xs-full">Book a test drive</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
